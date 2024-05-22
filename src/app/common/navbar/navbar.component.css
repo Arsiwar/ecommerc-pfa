@@ -1,0 +1,33 @@
+.shop{
+    font-size: 25px;
+    color: #000;
+}
+
+
+.cartItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.cartItem div{
+    padding: 0 28px;
+}
+img{
+    width: 25px;
+}
+
+
+.logo{
+    font-weight: 800;
+}
+
+
+.logo1{
+    font-weight: 900;
+    color: #f89cab;
+}
+
+ 

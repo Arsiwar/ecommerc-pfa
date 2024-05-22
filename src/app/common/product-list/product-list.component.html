@@ -1,0 +1,22 @@
+<div class='container-fluid'>
+    <h1 class="text-uppercase pt-5 py-2 text-center">All Products</h1>
+    <div class="d-flex flex-row" *ngFor="let item of products">
+        <div class="card mx-auto col-md-3 col-10 mt-5">
+            <img class='mx-auto img-thumbnail'
+                src={{item.imageUrl}}
+                width="auto" height="auto"/>
+            <div class="card-body text-center mx-auto">
+                <div class='cvp'>
+                    <h5 class="card-title font-weight-bold">{{item.name}}</h5>
+                    <p class="card-text">{{item.unitPrice | currency : 'TND'}}</p>
+                    <a href="#" class="btn details px-auto" (click)="gotoviewdetails()">view details</a><br />
+                    <a href="#" class="btn cart px-auto">ADD TO CART</a>
+                </div>
+            </div>
+        </div></div>
+    
+  
+  </div>
+  
+  
+  
