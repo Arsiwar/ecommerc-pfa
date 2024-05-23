@@ -13,6 +13,7 @@ import { FeaturesDetailsComponent } from './common/features-details/features-det
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatBadgeModule } from '@angular/material/badge';
 import { FormComponent } from './common/form/form.component';
+import { HomeComponent } from './common/home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormComponent } from './common/form/form.component';
     CarouselComponent,
     FeaturesComponent,
     FeaturesDetailsComponent,
-    FormComponent
+    FormComponent,
+    HomeComponent
 
   ],
   imports: [

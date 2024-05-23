@@ -33,12 +33,15 @@
                      <i    class="fa fa-shopping-cart shop"
                     aria-hidden="true" ></i>
                     
-                    <span matBadge="0" matBadgeOverlap="true" ></span> <!-- le nombre de commandes -->
+                    <span matBadgeOverlap="true">
+                        {{cartItemCount}}
+                    </span> <!-- le nombre de commandes -->
                 </a>
                
             </div>
-            <img src="../../../assets/compte.png" alt="" srcset="">
-
+            <a routerLink="/form">
+                <img src="../../../assets/compte.png" alt="" srcset="">
+            </a>
         </div>
     </div>
 </nav>

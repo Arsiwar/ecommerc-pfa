@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FeaturesComponent } from './common/features/features.component';
-import { ProductListComponent } from './common/product-list/product-list.component';
 import { FeaturesDetailsComponent } from './common/features-details/features-details.component';
+import { FeaturesComponent } from './common/features/features.component';
 import { FormComponent } from './common/form/form.component';
+import { ProductListComponent } from './common/product-list/product-list.component';
 
 const routes: Routes = [
   { path: '',
@@ -11,7 +11,7 @@ const routes: Routes = [
 { path: 'products',
  component: ProductListComponent },
  {
-  path:'details',
+   path: 'details/:id',
   component:FeaturesDetailsComponent
  },
  {

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { CartItem } from '../common/cart-item';
 import { BehaviorSubject, Subject } from 'rxjs';
+import { CartItem } from '../common/cart-item';
+import { Product } from '../common/product';
 
 
 @Injectable({
@@ -10,6 +11,9 @@ export class CartService {
   cartItem: CartItem[]=[];
   totalPrice: Subject<number> = new BehaviorSubject<number>(0);
   totalQuantity: Subject<number> = new BehaviorSubject<number>(0);
+  private cartItems: Product[] = []; // Replace with your cart data structure
+
+  cartUpdated = new Subject<number>(); // Create an event emitter for cart updates
 
   constructor() { }
 
@@ -74,5 +78,9 @@ remove(theCartItem: CartItem){
     this.computeCartTotals();
   }
 }
+
+  getCartItemCount(): number {
+    return this.cartItem.length;
+  }
 
 }

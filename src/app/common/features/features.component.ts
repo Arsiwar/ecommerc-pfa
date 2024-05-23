@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../product';
-import { ProductService } from '../../service/product.service';
 import { Router } from '@angular/router';
+import { ProductService } from '../../service/product.service';
+import { Product } from '../product';
 
 @Component({
   selector: 'app-features',
@@ -30,12 +30,9 @@ export class FeaturesComponent implements OnInit {
       }
     )
   }
-  allProducts() {
-    this.router.navigate(['/products']); 
-  }
-  
-  gotoviewdetails() {
-    this.router.navigate(['/details']); 
+  addToCart(item: Product) {
+    // Add the product to cart logic here
+    console.log('Adding product to cart:', item);
   }
 
 }

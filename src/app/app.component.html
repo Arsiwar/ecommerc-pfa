@@ -1,10 +1,9 @@
 <div class="page-wrapper container-fluid">
-   <app-navbar/>
-    <app-carousel/>
-    <router-outlet></router-outlet>
-    <!--<app-features></app-features>
- <app-product-list></app-product-list>--> 
+   <app-navbar></app-navbar>
+   <app-carousel *ngIf="showCarousel"></app-carousel>
+   <div class="content">
+      <router-outlet></router-outlet>
+   </div>
  
- <app-footer></app-footer>
- 
+   <app-footer></app-footer>
 </div>

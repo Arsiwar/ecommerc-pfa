@@ -17,6 +17,9 @@ export class ProductService {
     map(response => response._embedded.products)
     );
     }
+  getProduct(theId: number): Observable<Product> {
+    return this.httpClient.get<Product>(`${this.baseUrl}/${theId}`);
+  }
     }
     
     interface GetResponse {
